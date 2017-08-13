@@ -2,11 +2,11 @@ Mini-Curso de Arduino
 
 Objetivos: 
 1. Conhecer a plataforma de hardware e software
-2. Desenvolver pequenos projetos com leitura de sensores digitais e analógicos
-3. Desenvolver projetos com visualização de dados com Display
-4. Projetos com comunicação de dados com radio NRF24L01, HC-12, BlueTooth e Wifi
-5. Projetos com gravação em cartão SD
-6. Projetos com conexão com plataformas de nuvem: Ubidots, Blynk, MQTT e Node-Red. Outras opções são Arest, Thinkspeak, dentre outros.
+e Desenvolver pequenos projetos com leitura de sensores digitais e analógicos
+2. Desenvolver projetos com visualização de dados com Display
+3. Projetos com comunicação de dados com radio NRF24L01, HC-12, BlueTooth e Wifi
+4. Projetos com gravação em cartão SD
+5. Projetos com conexão com plataformas de nuvem: Ubidots, Blynk, MQTT e Node-Red. Outras opções são Arest, Thinkspeak, dentre outros.
 
 Roteiro
 
@@ -57,8 +57,9 @@ c) Ao digitar Parar, o led para de piscar...
 
 1.5 Sensor DHT
 Os sensores usam bibliotecas em Geral. O DHT é um sensor
-digital de temperatura e umidade. A biblioteca ja esta 
-instalada e o programa exemplo, le o Sensor e imprime os 
+digital de temperatura e umidade. A biblioteca ja esta
+disponível em https://github.com/adafruit/DHT-sensor-library 
+Uma vez instalada, o programa exemplo dhttester, le o Sensor e imprime os 
 valores no terminal serial. Voce precisa apenas informar em
 qual pino o sensor está ligado. Ele precisa de 3 fios, 2 para 
 alimentação e um para comunicação.
@@ -78,15 +79,46 @@ Semelhante ao DHT, vamos apresentar o exemplo
 da Biblioteca. Verifique a conexão. Além dos 2 fios de 
 alimentação, o HC 04 usa 2 fios para comunicar com 
 o Arduino.
+A biblioteca está disponível em vários sites da internet, como
+o site da flipflop por exemplo
+https://github.com/filipeflop/Ultrasonic
+
 Gravar e executar o exemplo básico
 UltraSonic Master -> UltraSonic Demo
 Tarefas
-a) Armazenar e imprimir ovalor máximo.
+a) Armazenar e imprimir o valor máximo.
 b) Imprimir o valor maximo apenas se for digitado M no 
 terminal Serial.
 c) Calcular media e mostrar quantas leituras.
 
-1.7 
+1.7 LDR
+O LDR é um resistor sensivel a luz e 
+não precisa de biblioteca. O Exemplo da IDE para
+ler um sinal analógico é o ponto de partida.
+Analog -> AnalogInput
+Irá ler o LDR na entrada A0 e o led13 irá 
+piscar em função do valor lido.
+O LDR será ligado em serie com um resistor de 10K
+GND -> resistor -> pino A0 -> LDR -> VCC
 
+Tarefas
+a) Armazenar e imprimir o valor máximo no terminal serial
+b) Imprimir o valor maximo apenas se for digitado M no 
+terminal Serial.
+c) Calcular media e mostrar quantas leituras.
+
+
+2. Display
+Iremos ilustrar tres display. 
+
+2.1 Display TFT
+É um display grafico e tem um exemplo
+bem popular com o jogo flappy Bird. 
+https://www.filipeflop.com/blog/jogando-flappy-bird-com-arduino/
+A pasta contem o exemplo do jogo e duas demos com
+a exibição do ultrasonico no Display. Contém também um arquivo PDF com
+explicações e links para o TFT.
+
+2.2 
 
 
