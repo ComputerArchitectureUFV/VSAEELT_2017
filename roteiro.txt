@@ -1,0 +1,92 @@
+Mini-Curso de Arduino
+
+Objetivos: 
+1. Conhecer a plataforma de hardware e software
+2. Desenvolver pequenos projetos com leitura de sensores digitais e analógicos
+3. Desenvolver projetos com visualização de dados com Display
+4. Projetos com comunicação de dados com radio NRF24L01, HC-12, BlueTooth e Wifi
+5. Projetos com gravação em cartão SD
+6. Projetos com conexão com plataformas de nuvem: Ubidots, Blynk, MQTT e Node-Red. Outras opções são Arest, Thinkspeak, dentre outros.
+
+Roteiro
+
+Aula teórica com demonstrações das práticas. 
+
+1. Plataforma de Hardware e Software
+
+1.1 Pisca Led.
+
+Instalada a IDE do Arduino, File -> Examples -> Basics => Blink. 
+Carregar o exemplo e compilar. Escolher o Arduino que voce está usando no
+tool -> boards. Pode ser um Uno, Leonardo ou até um NodeMCU.
+Algumas tarefas
+a) Modificar o tempo, piscar mais rapido e/ou mais lento. Regravar e
+testar. 
+b) Piscar 3 vezes rápido e 3 vezes lento.
+
+1.2 Terminal Serial
+
+O terminal serial tem varias funções interessante. Primeiro,
+a comunicação com o Arduino para enviar comandos/dados 
+do Computador para o Arduino e vice-versa. Executar o
+exemplo ex1_2_echo_serial. Ele irá apenas ler o que
+você digitar no terminal, enviar para o Arduino, 
+o arduino envia de volta e o terminal imprime o que
+voce digitou.
+
+1.3 Terminal Serial e Led.
+
+Este exemplo acende se voce digitar 1 e apaga se digitar 0, o led 13 do
+Arduino. Informa tambem o estado do led.
+Tarefas
+a) Modificar para ao apertar 2, o led piscar;
+b) Modificar para ao apertar 3, imprime no terminal
+se o led está acesso ouapagado. dicas: usar digitalRead(led) para ler
+o valor do led, sera HIGH ou LOW. Usar Serial.println("Led Acesso"). ou 
+Serial.println("Led Apagado");
+
+1.4 Terminal Serial, Led e Strings
+
+Semelhante ao exemplo 1.3, no lugar de caracteres, este exemplo
+processa comandos com palavras (Strings). Usando ON para ligar 
+e OFF para desligar. 
+Tarefas
+a) Modificar para ao digitar "Pisca", o led irá piscar
+b) Ao digitar Rapido, o led comeca a pisca rapido e não para....
+c) Ao digitar Parar, o led para de piscar...
+
+1.5 Sensor DHT
+Os sensores usam bibliotecas em Geral. O DHT é um sensor
+digital de temperatura e umidade. A biblioteca ja esta 
+instalada e o programa exemplo, le o Sensor e imprime os 
+valores no terminal serial. Voce precisa apenas informar em
+qual pino o sensor está ligado. Ele precisa de 3 fios, 2 para 
+alimentação e um para comunicação.
+
+Abrir examples -> DHT Sensor Library -> DHT tester
+Verificar se está conectado no pino 2 e qual o tipo
+de DHT 11 (azul) ou 22 (branco).
+Gravar e executar o programa de teste.
+Tarefas
+a) Armazenar e imprimir ovalor máximo.
+b) Imprimir o valor maximo apenas se for digitado M no 
+terminal Serial.
+c) Calcular media e mostrar quantas leituras.
+
+1.6 Sensor Ultrasonico HC 04
+Semelhante ao DHT, vamos apresentar o exemplo
+da Biblioteca. Verifique a conexão. Além dos 2 fios de 
+alimentação, o HC 04 usa 2 fios para comunicar com 
+o Arduino.
+Gravar e executar o exemplo básico
+UltraSonic Master -> UltraSonic Demo
+Tarefas
+a) Armazenar e imprimir ovalor máximo.
+b) Imprimir o valor maximo apenas se for digitado M no 
+terminal Serial.
+c) Calcular media e mostrar quantas leituras.
+
+1.7 
+
+
+
