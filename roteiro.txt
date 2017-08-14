@@ -122,3 +122,24 @@ explicações e links para o TFT.
 2.2 
 
 
+5.1 Ubidots
+Criar um conta no Ubidots. Usaremos o NodeMCU como exemplo. 
+Instalar a biblioteca do Ubidots.Seguir o roteiro para 
+o exemplo com o NodeMCU
+
+5.2 BLynk
+seguir o roteiro e instalar o Blynk no seu celular.
+
+5.3 Mqqt
+Instalar os aplicativos Mqtt dasboard ou mqtt dash. 
+Dicas nos sites
+http://www.hivemq.com/blog/mqtt-essentials-part-3-client-broker-connection-establishment
+
+http://www.hivemq.com/blog/mqtt-essentials-part-4-mqtt-publish-subscribe-unsubscribe
+
+http://www.hivemq.com/blog/mqtt-essentials-part-5-mqtt-topics-best-practices
+
+
+
+
+
