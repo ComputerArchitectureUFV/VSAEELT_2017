@@ -3,7 +3,9 @@ Códigos Fontes do curso de Arduíno apresentado no V Simpósio Acadêmico de En
 
 Instalações prévias necessárias (Para o maior aproveitamento do curso)
 
-1. Criar uma conta no Ubidots - https://ubidots.com/
+1. Criar uma conta no Ubidots 
+
+https://ubidots.com/
 
 No celular android, instalar os aplicativos:
 
@@ -14,6 +16,7 @@ http://www.blynk.cc/
 3. Instalar os aplicativos mqtt dash e mqtt dashboard
 
 https://play.google.com/store/apps/details?id=net.routix.mqttdash&hl=en
+
 https://play.google.com/store/apps/details?id=com.thn.iotmqttdashboard&hl=en
 
 4. Instalar um terminal bluetooth
