@@ -23,6 +23,7 @@ void loop() {
  
   if(mySerial.available() > 0){ // ler a partir do HC-12 and envia para o serial monitor
     
+    Serial.print("Voce recebeu: ");
     String input = mySerial.readString();
     Serial.println(input);    
   }
